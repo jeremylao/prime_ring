@@ -1,0 +1,33 @@
+Prime Ring Problem:
+
+For any even number n between 0 and 16, 0 <n <= 16, the program will print a ring of numbers such that for each number, the sum of two adjacent numbers is a prime. 
+
+The program accepts standard input, each case is delineated by a new line, and an empty line will start the program. 
+
+To test and print the possible permutations, this program utilizes recursive backpacking.  The key concept include: 
+
+1) Look up table
+2) A wrapper around a recursive call that will adjust and unadjust the environment before and after the recursive call
+
+  mark number 4 as visited
+  prime_ring(n-1)
+  unmark number 4 as visited
+
+
+Compile: 
+
+g++ -std=c++0x -o prime prime_ring.cpp
+
+./prime
+2
+4
+6
+8
+
+Case 1:
+...
+...
+...
+...
+...
+...
